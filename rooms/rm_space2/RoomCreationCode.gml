@@ -1,0 +1,1 @@
+global.data[$ "fromSpace2"] = true

@@ -1,0 +1,21 @@
+par selectable
+coliblock obj
+obj popup
+beatbars
+obj mv
+obj loadscreen
+retrocede obj
+par npc
+spr epic circle
+spr grass
+spr outside tiles
+rm_1-5
+spr warning
+obj spawn
+
+obj container
+spr_cointainer
+
+fixes
+fill rooms
+replace sprs

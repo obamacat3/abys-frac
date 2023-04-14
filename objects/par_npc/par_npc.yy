@@ -1,0 +1,48 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "par_npc",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "characters",
+    "path": "folders/Objects/not general stuff/extrass/characters.yy",
+  },
+  "parentObjectId": {
+    "name": "par_speaker",
+    "path": "objects/par_speaker/par_speaker.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.4,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": true,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":50.0,"y":0.0,},
+    {"x":50.0,"y":55.0,},
+    {"x":0.0,"y":55.0,},
+  ],
+  "physicsStartAwake": true,
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"state","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"playerState.idle","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"follow","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
+  ],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_mvoidDown",
+    "path": "sprites/spr_mvoidDown/spr_mvoidDown.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

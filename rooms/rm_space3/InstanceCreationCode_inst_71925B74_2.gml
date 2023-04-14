@@ -1,0 +1,1 @@
+if getDataTemp("fromSpace2") talkable = false

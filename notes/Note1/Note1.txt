@@ -1,0 +1,15 @@
+cgs r the images that appear they appear in frames the ones that have it
+chr portraits u can guess also same as above
+
+im not explaini the obius ones 
+
+fix the rooms coliblocks by reloading the room with files again
+
+just use call later 4 doing after fades 
+check if its already been done in gmcrtl in rm start
+
+need to make a system to push objects
+so made par playablechar and npc use physichs in colission goup 1
+
+after they land they make a trip and talk to the bots after some while in the radiation
+eve kidnaps mei and op has to save her also can play as fop

@@ -1,0 +1,1 @@
+invert the values from falloff bulleto to 0.9 to 1.1 to make them speed up instead

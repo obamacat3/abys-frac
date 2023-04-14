@@ -1,0 +1,1 @@
+if getDataTemp("fromSpace2") scripto = [room_goto,rm_space3]; spawn = sspace31

@@ -1,0 +1,1 @@
+//if global.data[$ "fromSpace2"] var f = instance_create_layer(x,y,layer,obj_MV);instance_destroy(); 

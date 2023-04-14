@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "par_angledObj",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "actual objets",
+    "path": "folders/Objects/not general stuff/objs/actual objets.yy",
+  },
+  "parentObjectId": {
+    "name": "par_enviroment",
+    "path": "objects/par_enviroment/par_enviroment.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dir","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":true,"rangeMax":4.0,"rangeMin":0.0,"value":"0","varType":1,},
+  ],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_chest",
+    "path": "sprites/spr_chest/spr_chest.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

@@ -1,0 +1,19 @@
+make pauses with new dialogues using the script ft
+
+fadeout and fadein both last 120 frames so make delays of 120 b4
+
+1280 720 mod
+640 480 standart
+960 720 1.5*
+//nooo 940
+
+loop truh the bullets check wich are dead then remove them from list
+
+/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+/// @DnDVersion : 1
+/// @DnDHash : 1FB79D6E
+show_debug_message(string("debug message"));
+
+bullets that go to a specific point
+
+start making rooms in the same room but just change positions
