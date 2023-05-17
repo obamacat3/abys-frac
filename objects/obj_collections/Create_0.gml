@@ -6,6 +6,7 @@ clearFunctions(modess.restart)
 instance_deactivate_all(true)
 menuItems = [
 obj_coinCounter,
+//just delete these
 obj_phoneColl,
 obj_basebio,
 obj_basebio
@@ -36,7 +37,7 @@ for (var i = 0; i < array_length(menuItems); i++) {
 	ii.imgg = spr_vildIcon
 	break
 		case 3: //eve
-	ii.bioText = "After being created by Vild she was devoted to him and started being his assistant and following all of his steps and will keep doing that until one of them dies, Strength 7-10, Smarts: ?-10, Resources: 2-10, Happyness: 10-10. EXTRA: Eve thinks of its relationship with vild as family Vilds also thinks her as family but supresses it to friends. eve tries does what she can to help him in not so pleasurable ways for Vild..."
+	ii.bioText = "After being created by Vild she was devoted to him and started being his assistant and following all of his steps, Strength 7-10, Smarts: ?-10, Resources: 2-10, Happyness: 10-10. EXTRA: Eve thinks of its relationship with vild as family Vilds also thinks her as family but supresses it to friends due to factually being NOT family. eve tries does what she can to help him in not so pleasurable and anoying ways for Vild... "
 	ii.imgg = spr_eveIcon
 	break
 	}

@@ -6,6 +6,7 @@ case snd_bangarang:
 sn = "Bangarang - Skrillex"
 break;
 case snd_FRACTURAL:
+global.bpm = 180
 sn = "Fractural - blackcat3"
 break;
 case snd_FRACTURALold:
@@ -39,30 +40,7 @@ obj_camera.msg = ["Current Song: " + sn]
 	if global.controlToggle == 1 {
 		
 		if keyboard_check_pressed(vk_alt) {
-		audio_stop_all()
-		vol = 0
-		audio=choose(snd_magicTouch, snd_bangarang, snd_FRACTURAL, snd_FRACTURALold, 
-		snd_Incoming, snd_pianoresolve,snd_tutorial, snd_lunarAbyss, snd_dimension,
-		snd_unarmed)
-		
-		switch audio {
-		case snd_FRACTURAL:
-		
-		global.bpm = 180
-		time_source_stop(obj_gmcrtl.onbeat)
-		secondsBeat = time_bpm_to_seconds(global.bpm);
-		time_source_reconfigure(obj_gmcrtl.onbeat, secondsBeat, time_source_units_seconds,function()
-{
-	obj_beatBars.beat(irandom_range(0,50))
-	obj_shaders.image_alpha = 1
-}, [], -1);
-        time_source_start(obj_gmcrtl.onbeat)
-
-		break;
-		}
-			
-		
-		audio_play_sound(audio,9,0, 1)
+			randomAudio()
 		}
 		
 	if (keyboard_check_pressed(vk_up)) { 

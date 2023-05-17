@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "da tut",
-    "path": "da tut.yyp",
+    "name": "cgs",
+    "path": "folders/Sprites/cgs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

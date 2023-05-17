@@ -5,18 +5,31 @@ fmv = obj_FV
 n1 = false
 n2 = false
 switch(choice_var){
-	#region
+	
+	#region TEMPLATE
+	case 0.1:
+
+		var i = 0;
+		myText[i]		= "..."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+
+    break
+	#endregion
+	
+	#region talk frst
 	case 0:
-		i = 0;
+		var i = 0;
 		myText[i]		= "So what is it?";
 		mySpeaker[i]	=id;
 		myEmotion[i] = 1 
 		i++
 		
-		arr = ["Who are you?", "Why are we in space?","Next page"]
+		arr = ["Who are you?", "Why are we in space?"]
 		myText[i]		= arr;
 		mySpeaker[i]	=id;
-		myNextLine[i] = [2,20,21]
+		myNextLine[i] = [2,20]
 		myEmotion[i] = 1 
 		i++ //1
 		
@@ -61,12 +74,12 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "By the way are we still in the year 202X? this looks really sci-fi";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
 		myText[i]		= "Those crystals are weird!";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
@@ -86,7 +99,7 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "No you are not!";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
@@ -106,7 +119,7 @@ switch(choice_var){
 		i++ //17
 		
 		myText[i]		= "You are not the god of space!";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++ //18
 		
@@ -130,7 +143,7 @@ switch(choice_var){
 		myEmotion[i] = 1  //20
 		i++ 
 		
-		myText[i]		= "They are actually some dead antimater fuel that the ships leaks whenever it feels like";
+		myText[i]		= "They are actually some dead antimatter fuel that the ships leaks whenever it feels like";
 		mySpeaker[i]	=id;
 		myEmotion[i] = 1 
 		i++
@@ -156,7 +169,7 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "I KNEW YOU WERE EVIL!!!";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
@@ -165,12 +178,12 @@ switch(choice_var){
 		myEmotion[i] = 1 
 		i++
 		
-		myText[i]		= "Still evil dude";
+		myText[i]		= "Whatever dude.";
 		mySpeaker[i]	=op
 		myEmotion[i] = 1  //28
 		i++
 		
-		myText[i]		= "Ahh.. Hush now please...";
+		myText[i]		= "Ahh.. Shut up now please...";
 		mySpeaker[i]	=id;
 		myEmotion[i] = 1 
 		myNextLine[i]= 1
@@ -239,7 +252,7 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "Eeeeh No.";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
@@ -249,7 +262,7 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "Shut up!, its a lame story ok?!?";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		myText[i]		= "Lame indeed...";
@@ -287,7 +300,7 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "Yeah! lets do it";
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
@@ -304,10 +317,13 @@ switch(choice_var){
 		myText[i]		= "Come. Follow me.";
 		mySpeaker[i]	=id;
 		myEmotion[i] = 1 
-		myScripts[i] = [doAfterFade(function(){
+		
+		myScripts[i] = [function(){
+			textboxdelay(119)
+		doAfterFade(function(){
 			room_goto(rm_space4)
 			
-		})] //kw probably need the ,'s
+		})}] //kw probably need the ,'s
 		i++
 		
 
@@ -315,5 +331,354 @@ switch(choice_var){
     break
 	#endregion
 
+	#region tal ship
+	case 1:
+		global.data.talkedMV = true
+		door121.allow = true
+		var i = 0;
+		myText[i]		= "Alright so...";
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Like... right next door is a ship we can take to our destination."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "You may have seen it..."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		if global.data.hasSeenShip {
+			
+		myText[i]		= "Oh yeah i think i know..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Good! then..."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		}
+		else {
+		myText[i]		= "Well if you havent... its to the down of here and then just ta@e a right."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "You cant miss it!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Yeah sure."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		}
+		myText[i]		= "Alright. see you there..."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1
+		myScripts[i] = [function(){
+			//todo walkout
+		}]
+		i++
+    break
+	#endregion
+	
+	#region tal ship go
+	case 2:
+	    choice_var = 2.1
+		door111.scripto = [room_goto, rm_space13]
+		door111.spawn = sspace131
+		global.data.traveledBack = true
+		var i = 0;
+		myText[i]		= "Hello pal!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "This is the thing thatll get'cha to the destination."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "its actually quite close to where we were just some moments ago.."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "This is just the faster way!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "You know how to use these. do ya want to do it?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "i dont know how to do this!"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Last time i just pressed the big red button!"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Why did you do that?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Dont you know most big red buttons launch nukes?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Yeah but you are forgeting something..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "What?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "its a big red button."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "......."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "......"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Oh.. d-dear. Youre right."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "You are gonna have to tak us there yourself."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Ahh... no problem!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "These things are really fast you know?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "i did notice..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "We are lik... on half a continent's size away from destination."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Still it only takes seconds."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "How is that? That speed is ridicolous!"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Ahh......."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "its out of your comprehension..."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Everything here is out of my comprehension..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Doesnt suprise me."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Thats good."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "From what i have heard you guys are still at goddamm sticks and stones."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Relatively!..."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "......"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Alright here we go!."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Lets go!."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Hey by the way your name was Vild right?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Yeah!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "So. are you from space?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Uhh.... yeah?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Like... from planet Zergblob?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Planet what? No!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Huh.... So where were you born?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Ohh.... that....."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "......."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Well i dont really know!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Huh?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Well. Listen. if what you are saying is if im from earth."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Yes. i indeed originate from earth."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Ohh... ok. alright sure!"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Hey."
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "And are you british?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Huh?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "What? Do i sound british?"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Says in the most british way posible..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "No! im not british!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "i just sounndddd british because it so happens that british people have the best ways of speaking!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "So you grew up british?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "......."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Yeah....."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "So what country are you from then?!?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "........."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Thats the thing i dont know!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Hmmm?????"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "i am...."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Either canadian or... russian."
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Huh..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Thats interesting!"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "How do you know you are from one of those two countries?"
+		FOP(i)
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Dont worry about it!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Cmon. we arrived!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Lets get out of here!"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		myText[i]		= "Heh alright then..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+
+    break
+	#endregion
+	#region chtchat
+	case 2.1:
+
+		var i = 0;
+		myText[i]		= "Save any remaining questions. i will assist you when we get to the ship"
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+
+    break
+	#endregion
 
 }

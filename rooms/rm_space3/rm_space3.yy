@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_space3",
-  "creationCodeFile": "${project_dir}/rooms/rm_1startRoom/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/rm_space3/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

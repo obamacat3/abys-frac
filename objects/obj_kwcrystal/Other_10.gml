@@ -72,7 +72,7 @@ switch(choice_var){
 		i++ //1
 		
 		myText[i]		= "Ahh.. Ahh..."
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
@@ -82,7 +82,7 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "Noo.. h.. h.. Im fine!"
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		i++
 		
@@ -92,7 +92,7 @@ switch(choice_var){
 		i++
 		
 		myText[i]		= "..... Im-.. Im colapsing.."
-		mySpeaker[i]	=fop;
+		FOP(i)
 		myEmotion[i] = 1 
 		myScripts[i] =[function() {
 			with (fop){

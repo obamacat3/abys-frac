@@ -2,10 +2,14 @@
 depth = -bbox_bottom
 //kw use global.fadeDone with talkable to do after fade in
 //event_inherited()
+//you can ut this in ncs faces
 if talkable {
 if global.controlToggle == 1 {
 	if instance_exists(global.player) {
-if instance_place(x,y,global.player) {
+		target = global.player
+	}
+	else target = par_npc
+if instance_place(x,y,target) {
 	if(myTextbox != noone){ 
 		if(!instance_exists(myTextbox)){ myTextbox = noone; exit; }
 	}
@@ -23,6 +27,4 @@ if instance_place(x,y,global.player) {
 
 //	}}
 }
-}
-
 }

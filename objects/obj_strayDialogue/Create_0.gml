@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 //event_inherited();
-
+target = global.player
 //-----------Customise (FOR USER)
 
 //interact_key = ord("E");

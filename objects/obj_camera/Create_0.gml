@@ -1,43 +1,14 @@
 /// @description SETUPPPPPPPPPPS
 // You can write your code in this editor
 //test
-
-#region Need to do this bc some instances dont exist in the moment
-
-global.FOP = function(i) { 
-mySpeaker[i] = obj_gmcrtl
-myName[i] = "Mei"
-myVoice[i] = snd_voice1
-myFont[i] = fnt_dialogue
-if getDataTemp("gotRibon") myPortrait[i]			= spr_POP //ADD R
-//else myPortrait[i]			= spr_FOP
-}
-
-global.MV = function(i) { 
-mySpeaker[i] = obj_gmcrtl
-myName[i] = "Vild"
-myVoice[i] = snd_dialogueVild
-myFont[i] = fnt_vild
-myPortrait[i]			= spr_PMV
-
-}
-
-global.FV = function(i) { 
-mySpeaker[i] = obj_gmcrtl
-myName[i] = "Eve"
-myVoice[i] = snd_dialogueEve
-myFont[i] = fnt_dialogue
-myPortrait[i]			= spr_PFV //ADD R
-//else myPortrait			= spr_FOP
-}
-
-
-
-#endregion
 msg = ["test","testy2"]
 //wtf? bugged
-global.data = {"n1level" : false,"n12button" : false,"gotRibon": false,"powerOn": false,
-	"landed": false, "fromSpace2": false, "talkedFirst": false}
+//the first ones are ordered so the ones like gotRibon are first
+global.data = {"n1level" : false,"n12button" : false,"gotRibon": false,"hasSeenShip": false,
+	"powerOn": false, "landed": false, "fromSpace2": false, "talkedFirst": false, "learnedData": false,
+	"talkedFV": false,"learnedClearance": false,"talkedRobot1": false,
+	"gotTo9": false, "brokeWall" : false, "hasGuns": false, "savedFV": false,
+	"shootFV": false, "traveledBack": false}
 //global.data2 = {"beatTUTORIAL" : false, "beatBANGARANG": false, "beatGAME" : false}
 global.data2 = {"beatTUTORIAL" : true, "beatBANGARANG": false, "beatGAME" : false, "endFunc" : function() {}}
 global.items = {"phone" : false, "Vild's bio" : false, "Eve's bio" : false, "coins" : 0}

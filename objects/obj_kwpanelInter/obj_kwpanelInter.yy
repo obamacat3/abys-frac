@@ -6,7 +6,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"par_speaker","path":"objects/par_speaker/par_speaker.yy",},"propertyId":{"name":"choice_var","path":"objects/par_speaker/par_speaker.yy",},"value":"1",},
+  ],
   "parent": {
     "name": "useless",
     "path": "folders/Objects/not general stuff/objs/actual objets/useless.yy",

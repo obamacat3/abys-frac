@@ -303,7 +303,7 @@ switch(choice_var){
 		mySpeaker[i]	=id;
 		myEmotion[i] = 1 
 		myScripts[i] = [function() {textboxdelay(240); 
-			moveToPath(two4crystal.x,two4crystal.y);
+			moveToPath(two4crystal.x,two4crystal.y - 120);
 			walkSpeed/=2;}]
 		i++
 		
@@ -390,12 +390,12 @@ switch(choice_var){
 		myEmotion[i] = 1 
 		i++
 		
-		myText[i]		= "Hell!";
+		myText[i]		= "Agh.......";
 		mySpeaker[i]	=id;
 		myEmotion[i] = 1 
 		i++
 		
-		myText[i]		= "Hey! Mei!";
+		myText[i]		= "Either way....";
 		mySpeaker[i]	=op;
 		myEmotion[i] = 1 
 		i++
@@ -450,6 +450,7 @@ switch(choice_var){
 		myEmotion[i] = 1 
 		myScripts[i] = [function(){
 		instance_destroy(blockade1)
+		instance_destroy()
 		follow = op
 		talkable = false
 		}]
@@ -458,6 +459,284 @@ switch(choice_var){
 	break
 	#endregion
 	
+	#region
+	case 2:
+	var i = 0;
+		myText[i]		= "Oh my goodness. Took you long enough!...";
+		mySpeaker[i]	=id;
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "What? i would say i was pretty fast myself..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Ok... ill give you that."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Just get me out of here already."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "... Hey what happened to you?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Huh.. me...."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "i dont know. i didnt pay atention."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "You dont remember these last minutes..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "i was bussy ok???..."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Bussy?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "While being tied up?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Not that beliebable..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Listeennnnnnn..."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Bussy talking!"
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Huh?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Yeah i was talking to Eve. The girl who kidnapped me!"
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Oh thats it then...."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "She didnt squeze any secrets out of you. Right?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "No!. That was a friendly converstation!"
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Friendly? How..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Well... She told me her reasons and side of the story..."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "i guess after that everything divulged into this...."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "......"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Are you sure you werent manipulated?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Yeah! im not an idiot!"
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "........."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "........"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Hey!"
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Not an idiot!"
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Now if you would hecking get me of this!"
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		myScripts[i] = [instance_destroy cage]
+		i++
+		
+		myText[i]		= "......"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Aghh.. much better now..."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Hey and what was her 'reasons'"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Ahh... She told me she kidnapped me because..."
+		mySpeaker[i]	=id
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "... Uh... i dont know.. Because its kind of standart procedure?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "She wasnt the most clear about it..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "... What else did she tell you?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "......."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "She wanted to meet somewhere near where you came from..?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "She wants to group up to go to where the Vild guy is i think..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= ".... What else?"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "The Vild guy..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "She told me some things about him..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Still very mysterious but..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "i really think he is really a god..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "After we go with her i think some doubts should be cleaned up...."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "For the rest you arent allowed trough."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "They are girl things..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Are you kiding me? even now?...."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Yeah!"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "......"
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Whatever it was most likely something stupid."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "Lets get a move on then..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		i++
+		
+		myText[i]		= "i think i know where to go..."
+		mySpeaker[i]	=op
+		myEmotion[i] = 1 
+		myScripts[i] = [instance_destroy self]
+		i++
+		global.data.savedFV = true
+		
+	break
+	#endregion
 
 
 }

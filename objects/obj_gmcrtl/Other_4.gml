@@ -30,11 +30,28 @@ switch room {
 	break;
 	#endregion
 	
+	#region rm_sspace11 shp
+	case rm_space11:
+	
+	global.data.hasSeenShip = true
+	break;
+	#endregion
+	
+	#region rm_space8 //eve
+	case rm_space8:
+	playSeq(fadeout,0.75)
+	global.controlToggle = -1
+	doAfterHalfFade(function(){
+	global.controlToggle = 1
+	},0.75)
+	break;
+	#endregion
+	
 	#region rm_space3 //vild
 	case rm_space3:
 	playSeq(fadeout,0.75)
 	global.controlToggle = -1
-	doAfterFade(function(){
+	doAfterHalfFade(function(){
 	global.controlToggle = 1
 	},0.75)
 	break;
@@ -56,7 +73,7 @@ switch room {
 	n = false
 	break;
 	#endregion
-	#region
+	#region //start saces
 	case rm_1startRoom:
 	 
 	r = room; repeat 5 {var n = room_next(r); with(n) { //asign to the next 5 rooms too
@@ -70,7 +87,7 @@ switch room {
 		
 	break
 	#endregion
-	#region
+	#region forest
 case rm_two4:
 q = fx_create("_filter_tintfilter")
 layer_set_fx("TilesTop", q)

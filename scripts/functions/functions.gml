@@ -1,9 +1,40 @@
 //gml_pragma("forceinline");
 
+#region Need to do this bc some instances dont exist in the moment
+
+function FOP(i) { 
+mySpeaker[i] = obj_gmcrtl
+myName[i] = "Mei"
+myVoice[i] = snd_voice1
+myFont[i] = fnt_dialogue
+myPortrait[i]			= spr_POP //ADD R
+//else myPortrait[i]			= spr_FOP
+}
+
+function MV(i) { 
+mySpeaker[i] = obj_gmcrtl
+myName[i] = "Vild"
+myVoice[i] = snd_dialogueVild
+myFont[i] = fnt_vild
+myPortrait[i]			= spr_PMV
+
+}
+
+function FV(i) { 
+mySpeaker[i] = obj_gmcrtl
+myName[i] = "Eve"
+myVoice[i] = snd_dialogueEve
+myFont[i] = fnt_dialogue
+myPortrait[i]			= spr_PFV //ADD R
+//else myPortrait			= spr_FOP
+}
+#endregion
+
 function draw_sprite_outline(sprite,subimg,_x,_y,xscale,yscale,rot,col,alpha,outlcol = c_white){
 draw_sprite_ext(sprite,subimg,_x,_y,xscale,yscale,rot,col,alpha)	
 draw_sprite_ext(sprite,subimg,_x,_y,xscale*1.1,yscale*1.1,rot,outlcol,alpha)
 }
+
 
 ///@arg modulate,x,y
 function draw_sprite_rgb(sprite,subimg,xscale,yscale,rot,col,alpha,xr,yr,xb = xr,yb=yr,xg=xr,yg=yr,color1=c_red,color2=c_blue,color3=c_green){
@@ -54,6 +85,9 @@ function giveCoins(amount = 1) {
 }
 function doAfterFade(scr, _speed = 1) {
 	playSeq(fadein,_speed)
+	call_later(120/_speed,time_source_units_frames,scr)
+}
+function doAfterHalfFade(scr, _speed = 1) {
 	call_later(120/_speed,time_source_units_frames,scr)
 }
 function realquickDialogue(text, speaker = obj_gmcrtl) {

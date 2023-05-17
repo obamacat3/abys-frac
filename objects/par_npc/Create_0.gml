@@ -82,6 +82,20 @@ function moveToPath(__x,__y) { //1off
 	return path
 }
 
+function moveWithPath(path) { //1off
+	//keyword
+	var _x = sign(path_get_x(path)-x)
+	var _y = sign(path_get_y(path)-y)
+    di = signDir(_x,_y)
+	//
+	state = playerState.walking;
+	myState = state //update
+	//var dir = point_direction(x,y, x+_x, y+_y);
+	//x += lengthdir_x(walkSpeed, dir);
+	//y += lengthdir_y(walkSpeed, dir);
+	path_start(path, 3, 0, 0);
+
+}
 function changeDir(dir = 0, mode = state) {
 	sprite_index = playerSpr[mode][dir];
 }

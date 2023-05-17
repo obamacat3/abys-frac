@@ -1,0 +1,1 @@
+if getDataTemp("brokWall") choice_var = 11

@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_toxicbarrel",
+    "path": "sprites/spr_toxicbarrel/spr_toxicbarrel.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

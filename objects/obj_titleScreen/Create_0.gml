@@ -15,6 +15,7 @@ vol = 0
 sn = "Internate"
 	audio_stop_all()
 audio=snd_FRACTURAL
+currentAudio = noone
 audio_play_sound(audio,9,0, 1)
 
 global.bpm = 180
@@ -24,7 +25,7 @@ secondsBeat = time_bpm_to_seconds(global.bpm);
 
 //song = noone
 //if !audio_is_playing(song) song = audio_play_sound()
-
+time_source_reset(obj_gmcrtl.onbeat)
 
 time_source_reconfigure(obj_gmcrtl.onbeat, secondsBeat, time_source_units_seconds,function()
 {
@@ -64,4 +65,33 @@ function deactivateSelf() {
     instance_deactivate_object(menuThingies[i])
 
 }
+}
+function randomAudio ( ) {
+		audio_stop_all()
+		
+		vol = 0
+		audio=choose(snd_magicTouch, snd_bangarang, snd_FRACTURAL, snd_FRACTURALold, 
+		snd_Incoming, snd_pianoresolve,snd_tutorial, snd_lunarAbyss, snd_dimension,
+		snd_unarmed)
+		
+		#region
+		switch audio {
+		case snd_FRACTURAL:
+	
+		secondsBeat = time_bpm_to_seconds(global.bpm);
+		time_source_reset(obj_gmcrtl.onbeat)
+		time_source_reconfigure(obj_gmcrtl.onbeat, secondsBeat, time_source_units_seconds,function()
+{
+	obj_beatBars.beat(irandom_range(0,50))
+	obj_shaders.image_alpha = 1
+}, [], -1);
+        time_source_start(obj_gmcrtl.onbeat)
+
+		break;
+		#endregion
+		}
+		
+			
+		
+		currentAudio = audio_play_sound(audio,9,0, 1)
 }

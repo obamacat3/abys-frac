@@ -12,7 +12,7 @@
 goDown = function (){
 	if curSelected2 != 0 { //down apparently
 			for (var i = 0; i < array_length_1d(menuThingies); i++) {
-				menuThingies[i].tx += amount + 50
+				menuThingies[i].tx += amount - 20
 				
 			}
 			vol = 0
@@ -24,7 +24,7 @@ goDown = function (){
 goUp = function(){
 			if array_length(menuThingies)-1 != curSelected2 {
 			for (var i = 0; i < array_length_1d(menuThingies); i++) {
-				menuThingies[i].tx -= amount + 50
+				menuThingies[i].tx -= amount -20
 			}
 			audio_stop_all()
 			vol = 0

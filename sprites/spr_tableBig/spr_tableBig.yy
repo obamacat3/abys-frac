@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "objs",
-    "path": "folders/Sprites/sprites/objs.yy",
+    "name": "kws",
+    "path": "folders/Sprites/sprites/objs/kws.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

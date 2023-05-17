@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "da tut",
-    "path": "da tut.yyp",
+    "name": "kws",
+    "path": "folders/Sprites/sprites/objs/kws.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

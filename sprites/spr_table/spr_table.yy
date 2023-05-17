@@ -22,11 +22,34 @@
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b6fc5de6-d887-4d1f-84b7-95afae6aa457","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
-  "nineSlice": null,
+  "nineSlice": {
+    "resourceType": "GMNineSliceData",
+    "resourceVersion": "1.0",
+    "bottom": 27,
+    "enabled": true,
+    "guideColour": [
+      4294902015,
+      4294902015,
+      4294902015,
+      4294902015,
+    ],
+    "highlightColour": 1728023040,
+    "highlightStyle": 1,
+    "left": 6,
+    "right": 6,
+    "tileMode": [
+      0,
+      0,
+      0,
+      0,
+      1,
+    ],
+    "top": 10,
+  },
   "origin": 0,
   "parent": {
-    "name": "objs",
-    "path": "folders/Sprites/sprites/objs.yy",
+    "name": "kws",
+    "path": "folders/Sprites/sprites/objs/kws.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

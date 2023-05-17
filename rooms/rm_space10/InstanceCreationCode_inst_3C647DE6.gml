@@ -1,0 +1,1 @@
+if getDataTemp("brokeWall") instance_destroy()

@@ -33,7 +33,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_FOPDown",
+    "path": "sprites/spr_FOPDown/spr_FOPDown.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

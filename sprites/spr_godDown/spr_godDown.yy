@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f7d7c458-912c-40d4-b867-823fc39d5aa8","blendMode":0,"displayName":"eyes","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2013dea4-b62b-48de-9b84-585d5dd72a0e","blendMode":0,"displayName":"head","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d24cc429-7827-4b04-b435-d77c8b3be300","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5359d09c-0b67-4115-92cd-2bd958c18ed3","blendMode":0,"displayName":"new","isLocked":false,"opacity":44.0,"visible":false,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"37bd160e-9bf2-4406-a31f-6f59ec173674","blendMode":0,"displayName":"Layer 2","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
